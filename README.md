@@ -7,7 +7,7 @@ To do List:
 Jack Russell:
 [x] Set up repository
 [x] Create flask app
-[] Create Postres Database on fly
+[x] Create Postres Database on fly
 [] Write up directions for andrew
 
 Shared:
