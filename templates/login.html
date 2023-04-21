@@ -1,1 +1,19 @@
-login page
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <h1>Login</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div style="background-color: red;">
+            {{ messages[0] }}
+        </div>
+    {% endif %}
+    {% endwith %}
+    <form method="POST" action="/login">
+        <input type="text" name="username" placeholder="Your Username" autofocus="">
+        <button type="submit">Login</button>
+    </form>
+    <a href="{{ url_for('signup') }}">Sign Up</a>
+</body>

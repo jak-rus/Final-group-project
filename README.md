@@ -11,8 +11,8 @@ Jack Russell:
 [] Write up directions for andrew
 
 Shared:
-[] Create home page and login
-[] Create Signup page
+[x] Create home page and login
+[x] Create Signup page
 [] Create set preferences page
 [] Create Page that makes recommendation
 [] Make it pretty
