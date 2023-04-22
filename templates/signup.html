@@ -1,1 +1,19 @@
-signup page
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <h1>Sign Up</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div style="background-color: red;">
+            {{ messages[0] }}. Go to <a href="{{ url_for('login') }}"> Login Page</a>.
+        </div>
+    {% endif %}
+    {% endwith %}
+    <form method="POST" action="/signup">
+        <input type="text" name="username" placeholder="Your Username" autofocus="">
+        <button type="submit">Create Account</button>
+    </form>
+    <a href="{{ url_for('login') }}">Log In</a>
+</body>
