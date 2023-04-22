@@ -8,7 +8,9 @@ Jack Russell:
 [x] Set up repository
 [x] Create flask app
 [x] Create Postres Database on fly
-[] Write up directions for andrew
+[] Write up directions for andrew:
+    flyctl proxy 5432 -a <postgres-app-name>
+    use this command to do the development locally
 
 Shared:
 [x] Create home page and login
