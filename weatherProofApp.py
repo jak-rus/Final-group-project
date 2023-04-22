@@ -11,6 +11,8 @@ import random
 from flask_sqlalchemy import SQLAlchemy
 import os
 
+
+#---app database and login setup---
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
 app.secret_key = os.getenv("SECRET_KEY")
@@ -18,7 +20,10 @@ db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.login_view = "login"
 login_manager.init_app(app)
+#----------------------------------
 
+
+#---DATABASE SETUP---
 class user(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
@@ -33,7 +38,9 @@ class user(db.Model, UserMixin):
 
 with app.app_context():
     db.create_all()
+#--------------------
 
+#---landing and login pages, as well as account functionality---
 @login_manager.user_loader
 def load_user(id):
     return user.query.get(int(id))
@@ -45,7 +52,11 @@ def landing():
 @app.route('/home')
 @login_required
 def home():
-    return render_template('home.html')
+
+    this_user = user.query.filter_by(username=current_user.username).first()
+    threshold = this_user.temperature_threshold
+
+    return render_template('home.html', threshold=threshold)
 
 @app.route("/login")
 def login():
@@ -88,5 +99,27 @@ def signup_post():
 def logout():
     logout_user()
     return redirect(url_for("login"))
+#---------------------------------------------------------
+
+#---Weather API Functionality---
+@app.route("/preferences")
+@login_required
+def preferences():
+    this_user = user.query.filter_by(username=current_user.username).first()
+    if this_user:
+        threshold = this_user.temperature_threshold
+        return render_template('preferences.html', threshold=threshold)
+    else:
+        return render_template("login.html")
+    
+@app.route("/preferences", methods=["POST"])
+def change_preferences_post():
+    this_user = this_user = user.query.filter_by(username=current_user.username).first()
+    threshold = request.form.get("threshold-setting")
+    this_user.temperature_threshold = threshold
+    db.session.commit()
+    return redirect(url_for("preferences"))
+
+
 
 app.run()

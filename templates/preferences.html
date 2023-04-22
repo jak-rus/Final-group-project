@@ -1,1 +1,22 @@
-preferences page
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <h1>Set Temperature Threshold for Recommendation</h1>
+    <a href="{{ url_for('home') }}">Home</a>
+    <form action = '/preferences' method="post">
+        <h6>Set Threshold</h6>
+        <output for="threshold" id="threshold-value">{{ threshold }}</output>
+        <input type="range" id="threshold-setting" name="threshold-setting" min="38" max="90" value="{{ threshold }}" oninput="updateThresholdValue()">
+        <button type="submit">Set</button>
+    </form>
+    <script>
+        function updateThresholdValue() {
+            var slider = document.getElementById("threshold-setting");
+            var output = document.getElementById("threshold-value");
+            output.innerHTML = slider.value;
+        }
+    </script>
+
+</body>
