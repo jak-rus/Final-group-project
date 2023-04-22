@@ -10,7 +10,9 @@ Jack Russell:
 [x] Create Postres Database on fly
 [] Write up directions for andrew:
     flyctl proxy 5432 -a <postgres-app-name>
-    use this command to do the development locally
+    run this command in one terminal to be able to connect and manipulate the database locally
+    then create another terminal to run the flask app and do whatever else
+
 
 Shared:
 [x] Create home page and login
