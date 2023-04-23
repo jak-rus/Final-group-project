@@ -24,11 +24,9 @@ def get_daily_forecast():
     weather_data = get_weather_data()
     try:
         daily_forecast = weather_data["current"]["temp"]
+        # current_weather = weather_data["current"]["weather"]["main"]
     except:
-        return 404
+        return 404  # , "Apocalypse"
         # If this temperatue pops up, either it's the end of the world, or the API fetch failed
     finally:
-        return daily_forecast
-
-
-print(get_daily_forecast())
+        return daily_forecast  # , current_weather

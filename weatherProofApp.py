@@ -10,6 +10,7 @@ from flask_login import (
 import random
 from flask_sqlalchemy import SQLAlchemy
 import os
+import APIFetch
 
 
 # ---app database and login setup---
@@ -57,8 +58,17 @@ def landing():
 def home():
     this_user = user.query.filter_by(username=current_user.username).first()
     threshold = this_user.temperature_threshold
+    temperature = APIFetch.get_daily_forecast()
+    if temperature == 404:
+        reccomendation = "What clothes to wear is the least of your problems"
+    elif temperature > threshold:
+        reccomendation = "Wear warm clothes"
+    else:
+        reccomendation = "Wear cold clothes"
 
-    return render_template("home.html", threshold=threshold)
+    return render_template(
+        "home.html", threshold=threshold, reccomendation=reccomendation
+    )
 
 
 @app.route("/login")
