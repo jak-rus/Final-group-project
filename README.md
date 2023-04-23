@@ -17,11 +17,13 @@ Jack Russell:
 Shared:
 [x] Create home page and login
 [x] Create Signup page
-[] Create set preferences page
+[x] Create set preferences page
 [] Create Page that makes recommendation
 [] Make it pretty
 
 Andrew McMeans:
 [x] Get Weather API info
 [] Take weather forecast and decide reccomendation based on user preferences
+
+--STRETCH FEATURE--
 [] Play music based on high temperature on reccomendation page
