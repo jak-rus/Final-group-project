@@ -22,6 +22,6 @@ Shared:
 [] Make it pretty
 
 Andrew McMeans:
-[] Get Weather API info
+[x] Get Weather API info
 [] Take weather forecast and decide reccomendation based on user preferences
 [] Play music based on high temperature on reccomendation page
