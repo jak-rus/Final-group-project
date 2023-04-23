@@ -23,7 +23,7 @@ def get_weather_data():
 def get_daily_forecast():
     weather_data = get_weather_data()
     try:
-        daily_forecast = weather_data["daily"][0]["temp"]["max"]
+        daily_forecast = weather_data["current"]["temp"]
     except:
         return 404
         # If this temperatue pops up, either it's the end of the world, or the API fetch failed
