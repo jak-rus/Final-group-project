@@ -7,4 +7,8 @@
     <a href="{{ url_for('preferences') }}">Temperature Preferences</a>
     {{threshold}}
     <h1>{{reccomendation}}</h1>
+    {% if threshold == 69 %}
+        <p>It's 69 degrees!</p>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Time to celebrate!</a>
+    {% endif %}
 </body>
