@@ -1,7 +1,42 @@
-# Final-group-project
-Final project clothing suggestion app based on a weather API
+# Group Project
+In this project, created by Jack Russell and Andrew McMeans, we created a reccomendation app that suggests what clothes you wear depending on the current weather!
 
-# group-project
+[Go check it out!](http://www.example.com/) <TODO: Add app deployment link>
+
+[Link to public Github repo](https://github.com/jak-rus/Final-group-project "You're already here!")
+
+[Link to Group Proposal](http://www.example.com/) <TODO: Add group proposal>
+
+## Pull Requests
+
+[Jack's first pull request](https://github.com/jak-rus/Final-group-project/pull/1)
+
+[Jack's second pull request](https://github.com/jak-rus/Final-group-project/pull/2)
+
+[Andrew's first pull request](https://github.com/jak-rus/Final-group-project/pull/3)
+
+[Andrew's second pull request](https://github.com/jak-rus/Final-group-project/pull/4)
+
+## Technical Requirements
+
+1. Flask Server
+2. Postgres Database
+3. Rest API Integration
+4. User Login
+
+## Stretch Features
+
+## Things we enjoyed
+
+1. (Andrew) I liked that this was a group project, because if there was something that I was having trouble with, then I could very easily get some support from my groupmate, which would've been impossible in the individual project.'
+2. (Andrew) I liked that this project was a lot more open ended, which allowed our creativity to flow in a way that was just not possible with the Individual project.
+
+## Things that could've been better
+
+1. (Andrew) I wish that we had more time so that we could get some more features done. I really wished that we could've given the webpage at least some CSS formatting, so that it doesn't look bare bones.
+2. (Andrew) I wanted to learn how to attach a music file to a webpage. Unfortunately, since that was a stretch feature, that got cut off.
+
+# REMOVE ME
 To do List:
 
 Jack Russell:
