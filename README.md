@@ -28,13 +28,23 @@ In this project, created by Jack Russell and Andrew McMeans, we created a reccom
 
 ## Things we enjoyed
 
-1. (Andrew) I liked that this was a group project, because if there was something that I was having trouble with, then I could very easily get some support from my groupmate, which would've been impossible in the individual project.'
-2. (Andrew) I liked that this project was a lot more open ended, which allowed our creativity to flow in a way that was just not possible with the Individual project.
+### Andrew
+1. I liked that this was a group project, because if there was something that I was having trouble with, then I could very easily get some support from my groupmate, which would've been impossible in the individual project.'
+2. I liked that this project was a lot more open ended, which allowed our creativity to flow in a way that was just not possible with the Individual project.
+
+### Jack
+1. I also liked the fact that it was a group project. Being able to delegate certain features to my partner so that we could finish the project quicker was nice.
+2. I liked that the project emphasized the topics we have learned, but did not require us to do much past that. I am swamped in work on other classes and another large project would have been the straw to break the camels back.
 
 ## Things that could've been better
 
-1. (Andrew) I wish that we had more time so that we could get some more features done. I really wished that we could've given the webpage at least some CSS formatting, so that it doesn't look bare bones.
-2. (Andrew) I wanted to learn how to attach a music file to a webpage. Unfortunately, since that was a stretch feature, that got cut off.
+### Andrew
+1. I wish that we had more time so that we could get some more features done. I really wished that we could've given the webpage at least some CSS formatting, so that it doesn't look bare bones.
+2. I wanted to learn how to attach a music file to a webpage. Unfortunately, since that was a stretch feature, that got cut off.
+
+### Jack
+1. I wish we would have had more time to incorporate more funcitonality into the recommendation. Doing this would make the recommendation a lot more robust and useful.
+2. Maybe tried to use a new framework, so I could have learned something new.
 
 # REMOVE ME
 To do List:
