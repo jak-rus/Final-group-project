@@ -1,11 +1,11 @@
 # Group Project
 In this project, created by Jack Russell and Andrew McMeans, we created a reccomendation app that suggests what clothes you wear depending on the current weather!
 
-[Go check it out!](http://www.example.com/) <TODO: Add app deployment link>
+[Go check it out!](https://delicate-moon-3247.fly.dev/)
 
 [Link to public Github repo](https://github.com/jak-rus/Final-group-project "You're already here!")
 
-[Link to Group Proposal](http://www.example.com/) <TODO: Add group proposal>
+[Link to Group Proposal](https://docs.google.com/document/d/1olv5kajrFNiTHmzGBUbLWnVv-rsouUC4y-lDZeLLNHs/edit?usp=sharing)
 
 ## Pull Requests
 
@@ -45,30 +45,3 @@ In this project, created by Jack Russell and Andrew McMeans, we created a reccom
 ### Jack
 1. I wish we would have had more time to incorporate more funcitonality into the recommendation. Doing this would make the recommendation a lot more robust and useful.
 2. Maybe tried to use a new framework, so I could have learned something new.
-
-# REMOVE ME
-To do List:
-
-Jack Russell:
-[x] Set up repository
-[x] Create flask app
-[x] Create Postres Database on fly
-[] Write up directions for andrew:
-    flyctl proxy 5432 -a <postgres-app-name>
-    run this command in one terminal to be able to connect and manipulate the database locally
-    then create another terminal to run the flask app and do whatever else
-
-
-Shared:
-[x] Create home page and login
-[x] Create Signup page
-[x] Create set preferences page
-[] Create Page that makes recommendation
-[] Make it pretty
-
-Andrew McMeans:
-[x] Get Weather API info
-[] Take weather forecast and decide reccomendation based on user preferences
-
---STRETCH FEATURE--
-[] Play music based on high temperature on reccomendation page
